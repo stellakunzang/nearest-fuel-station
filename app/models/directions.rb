@@ -14,6 +14,6 @@ class Directions
     data[:route][:legs][0][:maneuvers].map do |maneuver|
       narrative += maneuver[:narrative]
     end
-    narrative
+    narrative.gsub('.', '. ')
   end
 end
