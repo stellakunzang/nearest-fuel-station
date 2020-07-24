@@ -11,13 +11,13 @@ describe "user can select Turing from drop down on search form" do
     expect(current_path).to eq('/search')
 
     within(".name") do
-      expect(page).to have_content("Denver West Bldg 17")
+      expect(page).to have_content("Seventeenth Street Plaza")
     end
     within(".address") do
-      expect(page).to have_content("1626 Cole Boulevard")
+      expect(page).to have_content("1225 17th St.")
     end
     within(".fuel") do
-      expect(page).to have_content("")
+      expect(page).to have_content("ELEC")
     end
     within(".times") do
       expect(page).to have_content("")
