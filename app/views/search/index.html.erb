@@ -14,7 +14,7 @@
   <%= @directions.distance %>
 </div>
 <div class="travel_time">
-  <%= @directions.travel_time %>
+  <%= distance_of_time_in_words(@directions.travel_time.to_i) %>
 </div>
 <div class="directions">
   <%= @directions.directions %>
