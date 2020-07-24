@@ -26,10 +26,10 @@ describe "user can select Turing from drop down on search form" do
       expect(page).to have_content("0.1 miles")
     end
     within(".travel_time") do
-      expect(page).to have_content("1 minute")
+      expect(page).to have_content("less than a minute")
     end
     within(".directions") do
-      expect(page).to have_content("Turn left onto Lawrence St Destination will be on the left")
+      expect(page).to have_content("Start out going southeast on 17th St toward Larimer St")
     end
   end
 end
