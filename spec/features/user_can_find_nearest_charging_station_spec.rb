@@ -20,7 +20,7 @@ describe "user can select Turing from drop down on search form" do
       expect(page).to have_content("ELEC")
     end
     within(".times") do
-      expect(page).to have_content("")
+      expect(page).to have_content("Not Specified")
     end
     within(".distance") do
       expect(page).to have_content("0.1 miles")
